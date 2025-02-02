@@ -32,6 +32,7 @@ function maxProfit2(prices) {
         // Update result if we get more profit                
         res = Math.max(res, prices[i] - minSoFar);
     }
+
     return res;
 }
 
