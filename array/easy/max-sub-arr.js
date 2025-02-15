@@ -3,9 +3,8 @@ function maxSubArray(nums) {
     let currentSum = nums[0];
 
     for (let i = 1; i < nums.length; i++) {
-        // Either start a new subarray or extend the existing one
         currentSum = Math.max(nums[i], currentSum + nums[i]);
-        maxSum = Math.max(maxSum, currentSum); // Update max sum if needed
+        maxSum = Math.max(maxSum, currentSum);
     }
 
     return maxSum;
